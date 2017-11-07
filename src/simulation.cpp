@@ -36,6 +36,7 @@ void Simulation::run(std::ofstream& out) {
 		//! The network is updated
 		network.update(globalClock, out);
 		
+		std::cout << globalClock*h << " ms " << std::endl;
 		//! The global clock is incremented in steps
 		++globalClock;
 	}
