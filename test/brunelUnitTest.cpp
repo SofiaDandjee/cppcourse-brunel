@@ -1,0 +1,146 @@
+#include <iostream>
+#include "../src/neuron.h"
+#include "gtest/gtest.h"
+
+TEST (NeuronTest, PositiveCurrent) {
+	int simtime = 0;
+	Neuron neuron;
+	neuron.setCurrent(1.0);
+	//! First update test (0.1 ms or 1 step)
+	neuron.update(0);
+	EXPECT_EQ(20.0*(1.0-std::exp(-0.1/20.0)), neuron.getPotential());
+	//! Second update test (200 ms or 2000 steps)
+	while (simtime < 2000) {
+		neuron.update(0);
+		++simtime;
+	}
+	
+	//! The neuron should never spike
+	EXPECT_EQ(0,neuron.getSpikeNumber());
+	//! The potential should tend towards the threshold (20 mV) but never reach it
+	EXPECT_GT(1E-3, std::fabs(19.999-neuron.getPotential()));
+	
+}
+
+TEST (NeuronTest, NullCurrent) {
+	
+	int simtime =0;
+	Neuron neuron;
+	
+	//! We suppose that a neuron had a certain potential, the potential should decrease from this potential to 0
+	neuron.setPotential(20);
+	
+	//! Third update test (200 ms or 2000 steps)
+	neuron.setCurrent(0.0);
+	while (simtime < 2000) {
+	neuron.update(0);
+	++simtime;
+	}
+	
+	EXPECT_NEAR(0, neuron.getPotential(), 1E-3);
+}
+
+
+TEST (NeuronTest, NegativeCurrent) {
+	
+	int simtime = 0;
+	Neuron neuron;
+	neuron.setCurrent(-1.0);
+	
+	//! Second update test (200 ms or 2000 steps)
+	while (simtime < 2000) {
+		neuron.update(0);
+		++simtime;
+	}
+	//! The neuron should never spike
+	EXPECT_EQ(0,neuron.getSpikeNumber());
+	//! The potential should tend towards -20 mV but never reach it
+	EXPECT_GT(1E-3, std::fabs(-19.999-neuron.getPotential()));
+	
+}
+
+TEST (NeuronTest, NumberSpikes) {
+	int simtime = 0;
+	
+	//! Expected time of the spikes
+	std::vector<double> expectedSpikeTimes ({92.4,186.8,281.2, 375.6});
+	
+	//! Second update test (300 ms)
+	Neuron neuron;
+	neuron.setCurrent(1.01);
+	while (simtime < 4000) {
+	neuron.update(0);
+	++simtime;
+	}
+	
+	for (size_t i(0); i < expectedSpikeTimes.size(); ++i) {
+		EXPECT_EQ(expectedSpikeTimes[i],neuron.getSpikeTimes()[i]);
+	}
+	
+	//! 4 spikes expected
+	EXPECT_EQ(4,neuron.getSpikeNumber());
+}
+
+TEST (NeuronTest, Delay) {
+	
+	int simtime=0;
+	Neuron neuron1;
+	Neuron neuron2;
+	
+	neuron1.setCurrent(1.01);
+	
+	//! We know that neuron 1 first spikes at 92.4 ms and the delay is 1.5 ms so the neuron should receive J at 93.9 ms
+	while (simtime < 1000) {
+		
+		if (neuron1.update(0)) {
+			neuron2.receive(simtime+D_steps,J);
+		}
+		neuron2.update(0);
+		if (simtime < 939) {
+			EXPECT_EQ(neuron2.getPotential(),0.0);
+		}
+		if (simtime == 939) {
+			EXPECT_EQ (neuron2.getPotential(),J);
+		}
+		++simtime;
+	}
+
+}
+
+TEST (NeuronTest, TargetSpike) {
+
+int simtime=0;
+	Neuron neuron1;
+	Neuron neuron2;
+	
+	neuron1.setCurrent(1.01);
+	//! This time, we give a positive input to neuron 2 so that when he receives J, he is close to the threshold and can spike
+	neuron2.setCurrent (1.00);
+	
+	//! We know that neuron 1 second spikes at 186.8 ms and the delay is 1.5 ms so the neuron should receive J at 188.3 ms
+	while (simtime < 2000) {
+		
+		if (neuron1.update(0)) {
+			neuron2.receive(simtime+D_steps,J);
+		}
+		neuron2.update(0);
+		//! Just before neuron 2 spikes 
+		if (simtime == 1882) {
+			EXPECT_EQ(neuron2.getSpikeNumber(),0.0);
+		}
+		
+		//! Right after neuron 2 spikes, its potential should be reset to 0
+		if (simtime == 1884) {
+			EXPECT_EQ (neuron2.getPotential(),0);
+			EXPECT_EQ (neuron2.getSpikeNumber(), 1);
+		}
+		++simtime;
+	}
+
+}
+
+
+int main(int argc, char **argv) {
+	::testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();
+}
