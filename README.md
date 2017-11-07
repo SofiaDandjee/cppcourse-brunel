@@ -10,3 +10,12 @@ To generate the documentation:
 - "cmake .." then "make doc" in the ./build
 The HTML output directory is in ./doc
 
+Spike rate:
+
+a) g=3 eta=2 : ~196 spikes/neuron/sec
+
+b) g=6 eta=4 : ~50 spikes/neuron/sec
+
+c) g=5 eta=2 : ~30-32 spikes/neuron/sec
+
+d) g=4.5 eta=0.9 : ~5 spikes/neuron/sec
