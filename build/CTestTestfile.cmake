@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /Users/Sofia/Desktop/cppcourse-brunel
-# Build directory: /Users/Sofia/Desktop/cppcourse-brunel/build
+# Source directory: /Users/Sofia/Desktop/Network
+# Build directory: /Users/Sofia/Desktop/Network/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/Sofia/Desktop/cppcourse-brunel/src/main.cpp" "/Users/Sofia/Desktop/cppcourse-brunel/build/CMakeFiles/brunel.dir/src/main.cpp.o"
-  "/Users/Sofia/Desktop/cppcourse-brunel/src/network.cpp" "/Users/Sofia/Desktop/cppcourse-brunel/build/CMakeFiles/brunel.dir/src/network.cpp.o"
-  "/Users/Sofia/Desktop/cppcourse-brunel/src/neuron.cpp" "/Users/Sofia/Desktop/cppcourse-brunel/build/CMakeFiles/brunel.dir/src/neuron.cpp.o"
-  "/Users/Sofia/Desktop/cppcourse-brunel/src/simulation.cpp" "/Users/Sofia/Desktop/cppcourse-brunel/build/CMakeFiles/brunel.dir/src/simulation.cpp.o"
+  "/Users/Sofia/Desktop/Network/src/main.cpp" "/Users/Sofia/Desktop/Network/build/CMakeFiles/brunel.dir/src/main.cpp.o"
+  "/Users/Sofia/Desktop/Network/src/network.cpp" "/Users/Sofia/Desktop/Network/build/CMakeFiles/brunel.dir/src/network.cpp.o"
+  "/Users/Sofia/Desktop/Network/src/neuron.cpp" "/Users/Sofia/Desktop/Network/build/CMakeFiles/brunel.dir/src/neuron.cpp.o"
+  "/Users/Sofia/Desktop/Network/src/simulation.cpp" "/Users/Sofia/Desktop/Network/build/CMakeFiles/brunel.dir/src/simulation.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

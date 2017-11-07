@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Sofia/Desktop/cppcourse-brunel/gtest
+# Install script for directory: /Users/Sofia/Desktop/Network/gtest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

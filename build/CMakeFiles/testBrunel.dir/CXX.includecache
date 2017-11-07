@@ -278,9 +278,9 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/Users/Sofia/Desktop/cppcourse-brunel/src/neuron.cpp
+/Users/Sofia/Desktop/Network/src/neuron.cpp
 neuron.h
-/Users/Sofia/Desktop/cppcourse-brunel/src/neuron.h
+/Users/Sofia/Desktop/Network/src/neuron.h
 random
 -
 iostream
@@ -288,7 +288,7 @@ iostream
 fstream
 -
 
-/Users/Sofia/Desktop/cppcourse-brunel/src/neuron.h
+/Users/Sofia/Desktop/Network/src/neuron.h
 vector
 -
 cmath
@@ -296,11 +296,11 @@ cmath
 cassert
 -
 
-/Users/Sofia/Desktop/cppcourse-brunel/test/brunelUnitTest.cpp
+/Users/Sofia/Desktop/Network/test/brunelUnitTest.cpp
 iostream
 -
 ../src/neuron.h
-/Users/Sofia/Desktop/cppcourse-brunel/src/neuron.h
+/Users/Sofia/Desktop/Network/src/neuron.h
 gtest/gtest.h
-/Users/Sofia/Desktop/cppcourse-brunel/test/gtest/gtest.h
+/Users/Sofia/Desktop/Network/test/gtest/gtest.h
 

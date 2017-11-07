@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.9.4_1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Sofia/Desktop/cppcourse-brunel
+CMAKE_SOURCE_DIR = /Users/Sofia/Desktop/Network
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Sofia/Desktop/cppcourse-brunel/build
+CMAKE_BINARY_DIR = /Users/Sofia/Desktop/Network/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/brunel.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/brunel.dir/flags.make
 
 CMakeFiles/brunel.dir/src/main.cpp.o: CMakeFiles/brunel.dir/flags.make
 CMakeFiles/brunel.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Sofia/Desktop/cppcourse-brunel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/brunel.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/brunel.dir/src/main.cpp.o -c /Users/Sofia/Desktop/cppcourse-brunel/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Sofia/Desktop/Network/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/brunel.dir/src/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/brunel.dir/src/main.cpp.o -c /Users/Sofia/Desktop/Network/src/main.cpp
 
 CMakeFiles/brunel.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/brunel.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Sofia/Desktop/cppcourse-brunel/src/main.cpp > CMakeFiles/brunel.dir/src/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Sofia/Desktop/Network/src/main.cpp > CMakeFiles/brunel.dir/src/main.cpp.i
 
 CMakeFiles/brunel.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/brunel.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Sofia/Desktop/cppcourse-brunel/src/main.cpp -o CMakeFiles/brunel.dir/src/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Sofia/Desktop/Network/src/main.cpp -o CMakeFiles/brunel.dir/src/main.cpp.s
 
 CMakeFiles/brunel.dir/src/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/brunel.dir/src/main.cpp.o.provides.build: CMakeFiles/brunel.dir/src/m
 
 CMakeFiles/brunel.dir/src/neuron.cpp.o: CMakeFiles/brunel.dir/flags.make
 CMakeFiles/brunel.dir/src/neuron.cpp.o: ../src/neuron.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Sofia/Desktop/cppcourse-brunel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/brunel.dir/src/neuron.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/brunel.dir/src/neuron.cpp.o -c /Users/Sofia/Desktop/cppcourse-brunel/src/neuron.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Sofia/Desktop/Network/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/brunel.dir/src/neuron.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/brunel.dir/src/neuron.cpp.o -c /Users/Sofia/Desktop/Network/src/neuron.cpp
 
 CMakeFiles/brunel.dir/src/neuron.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/brunel.dir/src/neuron.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Sofia/Desktop/cppcourse-brunel/src/neuron.cpp > CMakeFiles/brunel.dir/src/neuron.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Sofia/Desktop/Network/src/neuron.cpp > CMakeFiles/brunel.dir/src/neuron.cpp.i
 
 CMakeFiles/brunel.dir/src/neuron.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/brunel.dir/src/neuron.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Sofia/Desktop/cppcourse-brunel/src/neuron.cpp -o CMakeFiles/brunel.dir/src/neuron.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Sofia/Desktop/Network/src/neuron.cpp -o CMakeFiles/brunel.dir/src/neuron.cpp.s
 
 CMakeFiles/brunel.dir/src/neuron.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/brunel.dir/src/neuron.cpp.o.provides.build: CMakeFiles/brunel.dir/src
 
 CMakeFiles/brunel.dir/src/network.cpp.o: CMakeFiles/brunel.dir/flags.make
 CMakeFiles/brunel.dir/src/network.cpp.o: ../src/network.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Sofia/Desktop/cppcourse-brunel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/brunel.dir/src/network.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/brunel.dir/src/network.cpp.o -c /Users/Sofia/Desktop/cppcourse-brunel/src/network.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Sofia/Desktop/Network/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/brunel.dir/src/network.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/brunel.dir/src/network.cpp.o -c /Users/Sofia/Desktop/Network/src/network.cpp
 
 CMakeFiles/brunel.dir/src/network.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/brunel.dir/src/network.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Sofia/Desktop/cppcourse-brunel/src/network.cpp > CMakeFiles/brunel.dir/src/network.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Sofia/Desktop/Network/src/network.cpp > CMakeFiles/brunel.dir/src/network.cpp.i
 
 CMakeFiles/brunel.dir/src/network.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/brunel.dir/src/network.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Sofia/Desktop/cppcourse-brunel/src/network.cpp -o CMakeFiles/brunel.dir/src/network.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Sofia/Desktop/Network/src/network.cpp -o CMakeFiles/brunel.dir/src/network.cpp.s
 
 CMakeFiles/brunel.dir/src/network.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/brunel.dir/src/network.cpp.o.provides.build: CMakeFiles/brunel.dir/sr
 
 CMakeFiles/brunel.dir/src/simulation.cpp.o: CMakeFiles/brunel.dir/flags.make
 CMakeFiles/brunel.dir/src/simulation.cpp.o: ../src/simulation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Sofia/Desktop/cppcourse-brunel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/brunel.dir/src/simulation.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/brunel.dir/src/simulation.cpp.o -c /Users/Sofia/Desktop/cppcourse-brunel/src/simulation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Sofia/Desktop/Network/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/brunel.dir/src/simulation.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/brunel.dir/src/simulation.cpp.o -c /Users/Sofia/Desktop/Network/src/simulation.cpp
 
 CMakeFiles/brunel.dir/src/simulation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/brunel.dir/src/simulation.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Sofia/Desktop/cppcourse-brunel/src/simulation.cpp > CMakeFiles/brunel.dir/src/simulation.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Sofia/Desktop/Network/src/simulation.cpp > CMakeFiles/brunel.dir/src/simulation.cpp.i
 
 CMakeFiles/brunel.dir/src/simulation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/brunel.dir/src/simulation.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Sofia/Desktop/cppcourse-brunel/src/simulation.cpp -o CMakeFiles/brunel.dir/src/simulation.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Sofia/Desktop/Network/src/simulation.cpp -o CMakeFiles/brunel.dir/src/simulation.cpp.s
 
 CMakeFiles/brunel.dir/src/simulation.cpp.o.requires:
 
@@ -169,7 +169,7 @@ brunel: CMakeFiles/brunel.dir/src/network.cpp.o
 brunel: CMakeFiles/brunel.dir/src/simulation.cpp.o
 brunel: CMakeFiles/brunel.dir/build.make
 brunel: CMakeFiles/brunel.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Sofia/Desktop/cppcourse-brunel/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable brunel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Sofia/Desktop/Network/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable brunel"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/brunel.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -189,6 +189,6 @@ CMakeFiles/brunel.dir/clean:
 .PHONY : CMakeFiles/brunel.dir/clean
 
 CMakeFiles/brunel.dir/depend:
-	cd /Users/Sofia/Desktop/cppcourse-brunel/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Sofia/Desktop/cppcourse-brunel /Users/Sofia/Desktop/cppcourse-brunel /Users/Sofia/Desktop/cppcourse-brunel/build /Users/Sofia/Desktop/cppcourse-brunel/build /Users/Sofia/Desktop/cppcourse-brunel/build/CMakeFiles/brunel.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/Sofia/Desktop/Network/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Sofia/Desktop/Network /Users/Sofia/Desktop/Network /Users/Sofia/Desktop/Network/build /Users/Sofia/Desktop/Network/build /Users/Sofia/Desktop/Network/build/CMakeFiles/brunel.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/brunel.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Sofia/Desktop/cppcourse-brunel
+# Install script for directory: /Users/Sofia/Desktop/Network
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/Sofia/Desktop/cppcourse-brunel/build/gtest/cmake_install.cmake")
+  include("/Users/Sofia/Desktop/Network/build/gtest/cmake_install.cmake")
 
 endif()
 
@@ -41,5 +41,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/Sofia/Desktop/cppcourse-brunel/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/Sofia/Desktop/Network/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -14,8 +14,8 @@ constexpr double h = 0.1; //!< Steptime in ms
 constexpr double vreset = 0; //!< Reset value of the potential in mV
 constexpr double J = 0.1; //!< Weight of a neuron connexion in mV
 constexpr double D = 1.5; //!< Synaptic delay in ms
-constexpr double g = 3; //!< Vthr/Vext
-constexpr double eta = 2; //!< Relative inhibitory weight
+constexpr double g = 4.5; //!< Vthr/Vext
+constexpr double eta = 0.9; //!< Relative inhibitory weight
 
 static int D_steps = static_cast <unsigned long>  (std::ceil (D/h)); //!< Synaptic delay in steps
 static double const1 = exp(-h/tau); //!< A calculation constant

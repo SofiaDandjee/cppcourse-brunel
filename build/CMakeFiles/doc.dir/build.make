@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.9.4_1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/Sofia/Desktop/cppcourse-brunel
+CMAKE_SOURCE_DIR = /Users/Sofia/Desktop/Network
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/Sofia/Desktop/cppcourse-brunel/build
+CMAKE_BINARY_DIR = /Users/Sofia/Desktop/Network/build
 
 # Utility rule file for doc.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /Users/Sofia/Desktop/cppcourse-brunel/build
 include CMakeFiles/doc.dir/progress.make
 
 CMakeFiles/doc:
-	cd /Users/Sofia/Desktop/cppcourse-brunel && /usr/local/bin/doxygen /Users/Sofia/Desktop/cppcourse-brunel/build/Doxyfile
+	cd /Users/Sofia/Desktop/Network && /usr/local/bin/doxygen /Users/Sofia/Desktop/Network/build/Doxyfile
 
 doc: CMakeFiles/doc
 doc: CMakeFiles/doc.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/doc.dir/clean:
 .PHONY : CMakeFiles/doc.dir/clean
 
 CMakeFiles/doc.dir/depend:
-	cd /Users/Sofia/Desktop/cppcourse-brunel/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Sofia/Desktop/cppcourse-brunel /Users/Sofia/Desktop/cppcourse-brunel /Users/Sofia/Desktop/cppcourse-brunel/build /Users/Sofia/Desktop/cppcourse-brunel/build /Users/Sofia/Desktop/cppcourse-brunel/build/CMakeFiles/doc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/Sofia/Desktop/Network/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Sofia/Desktop/Network /Users/Sofia/Desktop/Network /Users/Sofia/Desktop/Network/build /Users/Sofia/Desktop/Network/build /Users/Sofia/Desktop/Network/build/CMakeFiles/doc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doc.dir/depend
 

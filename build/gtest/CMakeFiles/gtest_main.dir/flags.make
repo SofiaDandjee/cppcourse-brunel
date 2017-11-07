@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -W -Wall -pedantic -std=c++11   -O3 -W -Wall -pedantic -std=c++1
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/Sofia/Desktop/cppcourse-brunel/gtest/include -I/Users/Sofia/Desktop/cppcourse-brunel/gtest 
+CXX_INCLUDES = -I/Users/Sofia/Desktop/Network/gtest/include -I/Users/Sofia/Desktop/Network/gtest 
 
