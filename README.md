@@ -5,13 +5,11 @@ To compile and run the program:
 - "cmake .." then "make" in the ./build
 - "./brunel" to run the main
 - "./brunelTest" to run the tests
-<<<<<<< HEAD
+
 
 To generate the documentation:
 - "cmake .." then "make doc" in the ./build
 The HTML output directory is in ./doc
-=======
->>>>>>> 9f79dad267f0d1aec13b8dd72a74857553abd556
 
 To generate the documentation:
 - "cmake .." then "make doc" in the ./build
