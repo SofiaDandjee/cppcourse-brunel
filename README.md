@@ -6,7 +6,6 @@ To compile and run the program:
 - "./brunel" to run the main
 - "./brunelTest" to run the tests
 
-
 To generate the documentation:
 - "cmake .." then "make doc" in the ./build
 The HTML output directory is in ./doc
@@ -15,12 +14,12 @@ To generate the documentation:
 - "cmake .." then "make doc" in the ./build
 The HTML output directory is in ./doc
 
-Spike rate:
+Spike rate results (1 s):
 
-a) g=3 eta=2 : ~196 spikes/neuron/sec
+PLOT A (g=3 eta=2) : ~196 spikes/neuron
 
-b) g=6 eta=4 : ~50 spikes/neuron/sec
+PLOT B (g=6 eta=4) : ~50 spikes/neuron
 
-c) g=5 eta=2 : ~30-32 spikes/neuron/sec
+PLOT C (g=5 eta=2) : ~30-32 spikes/neuron
 
-d) g=4.5 eta=0.9 : ~5 spikes/neuron/sec
+PLOT D (g=4.5 eta=0.9) : ~5 spikes/neuron
