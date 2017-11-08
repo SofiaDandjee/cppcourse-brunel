@@ -1,20 +1,31 @@
 # cppcourse-brunel
-Implementation of the recurrent spiking network, described in Brunel, N J. Comp Neuroscience 2000
+Implementation of the recurrent spiking network, described in Brunel, N J. Comp Neuroscience 2000 (Dynamics of Sparsely Connected Networks of Excitatory and Inhibitory Spiking Neurons)
 
+ABOUT THE PROGRAM:
+The network is formed of  at least N neurons. 80% of them are excitatory and 20% are inhibitory. Background noise of the brain is excitatory.
+Each neuron receives spikes from its local connexions (10% input probability) and the background noise of the brain.
+The program reproduces the Brunel simulation and records the network spikes at each time step.
+The following parameters are used:
+N=12500; NE=10000; NI=2500; CE=1000; CI=250
+
+LAUNCH THE PROGRAM:
 To compile and run the program:
-- "cmake .." then "make" in the ./build
-- "./brunel" to run the main
-- "./brunelTest" to run the tests
+- "cmake .." then "make" in the ./build folder
+- "./brunel" to run the main simulation
 
-To generate the documentation:
+To generate the Doxygen documentation:
 - "cmake .." then "make doc" in the ./build
-The HTML output directory is in ./doc
+The HTML output directory is in ./doc/html folder
 
-To generate the documentation:
-- "cmake .." then "make doc" in the ./build
-The HTML output directory is in ./doc
+USE THE PROGRAM:
+Enter the duration of the simulation wanted (in steptime of 0.1 ms) when asked.
 
-Spike rate results (1 s):
+TEST THE PROGRAM:
+- "cmake .." then "make" in the ./build folder
+- "./testBrunel" to run the tests
+The tests include testing of the neuron and network classes.
+
+Spike rate results (1s simulation):
 
 PLOT A (g=3 eta=2) : ~196 spikes/neuron
 
