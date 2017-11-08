@@ -13,7 +13,7 @@ To compile and run the program:
 - "cmake .." then "make" in the ./build folder
 - "./brunel" to run the main simulation
 
-To generate the Doxygen documentation:
+GENERATE THE DOCUMENTATION:
 - "cmake .." then "make doc" in the ./build
 The HTML output directory is in ./doc/html folder
 
