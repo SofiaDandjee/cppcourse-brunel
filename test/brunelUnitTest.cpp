@@ -146,12 +146,10 @@ TEST (NetworkTest, Connexions) {
 	
 	Network network;
 	
+	//!Connecting the network
 	network.initialize();
 	
-	for (auto&& neuron : network.getNeurons()) {
-		std::cout << neuron.getTargets().size() << std::endl;
-	}
-	
+	//! Random generators
 	static std::random_device rd;
 	static std::mt19937 gen(rd());
 	
@@ -160,33 +158,39 @@ TEST (NetworkTest, Connexions) {
 	int randomNeuron = chooseNeuron (gen);
 	
 	//! Number of times the neuron is another exhibitory neuron's target list
-	
 	unsigned int countE (0);
 	
+	//! Number of times the neuron is another inhibitory neuron's target list
+	unsigned int countI (0);
+	
+	//! Index of input neuron checked
+	unsigned int countNeuron (0);
+	
 	for (auto neuron : network.getNeurons()) {
+		
+		++countNeuron;
+		
 		for (auto target : neuron.getTargets() ) {
 			if (randomNeuron == target) {
-				++countE;
+				if (countNeuron <= NE) {
+					//! If the random neuron is an exhibitory neuron target
+					++countE;
+				} else if (countNeuron <= N) {
+					//! If the random neuron is an inhibitory neuron target
+					++countI;
+				}
 			}
+		
 		}
+	
 	}
 	
 	//! We check that the random neuron is the target list of CE neurons
 	EXPECT_EQ (countE, CE);
 	
-	//! Number of times the neuron is another inhibitory neuron's target list
-	unsigned int countI (0);
-	
-	for (size_t i(NE); i < N; ++i) {
-		for (auto target : network.getNeurons()[i].getTargets() ) {
-			if (randomNeuron == target) {
-				++countI;
-			}
-		}
-	}
-	
 	//! We check that the random neuron is the target list of CI neurons
 	EXPECT_EQ (countI, CI);
+	
 }
 
 int main(int argc, char **argv) {
