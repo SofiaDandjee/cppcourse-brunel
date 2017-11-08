@@ -8,13 +8,11 @@ Simulation::Simulation() {
 	globalClock = 0;
 }
 
-Simulation::Simulation (const Simulation& copy) {}
-
 Simulation::~Simulation () {}
 
 void Simulation::chooseDuration() {
 	
-	std::cout << "Duration of the simulation : ";
+	std::cout << "Duration of the simulation (in steps of 0.1 ms): ";
 	std::cin >> durationSteps;
 	assert(durationSteps>0);
 
@@ -32,7 +30,7 @@ void Simulation::run(std::ofstream& out) {
 	std::cout << "SIMULATION STARTS" << std::endl;
 	
 	//! Simulation runs from t=0 to TSTOP
-	while (globalClock < TSTOP) {
+	while (globalClock <= TSTOP) {
 		//! The network is updated
 		network.update(globalClock, out);
 		

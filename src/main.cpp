@@ -8,7 +8,7 @@ int main() {
 
 	
 	std::ofstream out; //!< Stream of output
-	std::string file ("Spikes.txt"); //!< Potential storing file
+	std::string file ("../graphs/Spikes.txt"); //!< Potential storing file
 	
 	//! Opening of the file
 	out.open(file.c_str());	

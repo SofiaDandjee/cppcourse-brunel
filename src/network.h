@@ -5,12 +5,6 @@
 #include <vector>
 #include <fstream>
 
-constexpr unsigned int N = 12500; //!< Total number of neurons in the network
-static unsigned int NE = 0.8*N; //!< Number of excitatory neurons
-static unsigned int NI = 0.2*N; //!< Number of inhibitory neurons
-static unsigned int CE = 0.1*NE; //!< Number of excitatory inputs per neuron
-static unsigned int CI = 0.1*NI; //!< Number of inhibitory inputs per neuron
-
 //! A network class
 class Network {
 	
@@ -24,9 +18,6 @@ class Network {
 	  Initializes the size of network to N neurons
 	*/
 	Network();
-	
-	//! A default copy constructor
-	Network (const Network& copy);
 	
 	//! A destructor
 	~Network ();

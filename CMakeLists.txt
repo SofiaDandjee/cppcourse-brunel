@@ -8,7 +8,7 @@ add_subdirectory(gtest)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 add_executable (brunel src/main.cpp src/neuron.cpp src/network.cpp src/simulation.cpp)
-add_executable (testBrunel test/brunelUnitTest.cpp src/neuron.cpp)
+add_executable (testBrunel test/brunelUnitTest.cpp src/neuron.cpp src/network.cpp)
 
 target_link_libraries(testBrunel gtest gtest_main)
 add_test(testBrunel testBrunel)

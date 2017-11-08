@@ -22,9 +22,6 @@ class Simulation {
 	*/
 	Simulation();
 	
-	//! A default constructor
-	Simulation (const Simulation& copy);
-	
 	//! A destructor
 	~Simulation ();
 	

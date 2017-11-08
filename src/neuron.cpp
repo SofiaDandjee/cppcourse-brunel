@@ -18,8 +18,6 @@ Neuron::Neuron () : ringBuffer(D_steps+1) {
 	
 }
 
-Neuron::Neuron (const Neuron& copy) {}
-
 Neuron::~Neuron () {}
 
 void Neuron::updatePotential(double input, double backgroundNoise) {

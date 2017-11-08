@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['g',['g',['../neuron_8h.html#ab65af9ad1ab66fac4ba26a865ae7ae13',1,'neuron.h']]],
+  ['g',['g',['../constants_8h.html#ab65af9ad1ab66fac4ba26a865ae7ae13',1,'constants.h']]],
   ['getneurons',['getNeurons',['../class_network.html#a929096a506f7a0e9b0bf291e4a1736e3',1,'Network']]],
   ['getpotential',['getPotential',['../class_neuron.html#acf44c8e2b57be445c2d802094a0c4f10',1,'Neuron']]],
   ['getspikenumber',['getSpikeNumber',['../class_neuron.html#a51af7112d876a9514bb9fc006462fef9',1,'Neuron']]],

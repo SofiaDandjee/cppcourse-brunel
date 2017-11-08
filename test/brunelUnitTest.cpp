@@ -1,6 +1,9 @@
 #include <iostream>
 #include "../src/neuron.h"
+#include "../src/network.h"
 #include "gtest/gtest.h"
+#include <random>
+#include <vector>
 
 TEST (NeuronTest, PositiveCurrent) {
 	int simtime = 0;
@@ -139,6 +142,52 @@ int simtime=0;
 
 }
 
+TEST (NetworkTest, Connexions) {
+	
+	Network network;
+	
+	network.initialize();
+	
+	for (auto&& neuron : network.getNeurons()) {
+		std::cout << neuron.getTargets().size() << std::endl;
+	}
+	
+	static std::random_device rd;
+	static std::mt19937 gen(rd());
+	
+	//! We choose a random neuron among N
+	static std::uniform_int_distribution<> chooseNeuron(0, N);
+	int randomNeuron = chooseNeuron (gen);
+	
+	//! Number of times the neuron is another exhibitory neuron's target list
+	
+	unsigned int countE (0);
+	
+	for (auto neuron : network.getNeurons()) {
+		for (auto target : neuron.getTargets() ) {
+			if (randomNeuron == target) {
+				++countE;
+			}
+		}
+	}
+	
+	//! We check that the random neuron is the target list of CE neurons
+	EXPECT_EQ (countE, CE);
+	
+	//! Number of times the neuron is another inhibitory neuron's target list
+	unsigned int countI (0);
+	
+	for (size_t i(NE); i < N; ++i) {
+		for (auto target : network.getNeurons()[i].getTargets() ) {
+			if (randomNeuron == target) {
+				++countI;
+			}
+		}
+	}
+	
+	//! We check that the random neuron is the target list of CI neurons
+	EXPECT_EQ (countI, CI);
+}
 
 int main(int argc, char **argv) {
 	::testing::InitGoogleTest(&argc, argv);

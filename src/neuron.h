@@ -4,25 +4,7 @@
 #include <vector>
 #include <cmath>
 #include <cassert>
-
-constexpr double R = 20; //!< Membrane resistance in Gohms
-constexpr double C = 1; //!< Capacitance in mF
-constexpr double tau = 20; //!<  Time constant is ms
-constexpr double reftime = 2; //!< Refractory duration in ms
-constexpr double vthr = 20; //!< Threshold potential (necessary to spike) in mV
-constexpr double h = 0.1; //!< Steptime in ms
-constexpr double vreset = 0; //!< Reset value of the potential in mV
-constexpr double J = 0.1; //!< Weight of a neuron connexion in mV
-constexpr double D = 1.5; //!< Synaptic delay in ms
-constexpr double g = 4.5; //!< Vthr/Vext
-constexpr double eta = 0.9; //!< Relative inhibitory weight
-
-static int D_steps = static_cast <unsigned long>  (std::ceil (D/h)); //!< Synaptic delay in steps
-static double const1 = exp(-h/tau); //!< A calculation constant
-static double const2 = R*(1-const1); //!< A second calculation constant
-static double JE = J; //!< Weight of an excitatory connexion in mV
-static double JI = -g*J; //!< Weight of an inhibitory connexion in mV
-static double rateExt = (eta*vthr*h)/(JE*tau); //!< Firing rate per O.1 ms
+#include "constants.h"
 
 //! A neuron class
 /*!
@@ -51,9 +33,6 @@ class Neuron {
 	  Initializes the potential, the number of spikes, the time of the last spike, the local clock, the external current and the received amplitude to 0
 	 */
 	Neuron ();
-
-	//! A default copy constructor
-	Neuron (const Neuron& copy );
 	
 	//! A Destructor
 	~Neuron ();
