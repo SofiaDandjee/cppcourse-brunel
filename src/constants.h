@@ -27,8 +27,8 @@ static double const2 = R*(1-const1); //!< A second calculation constant
  * Network related
  */
  
-constexpr double g = 4.5; //!< Vthr/Vext
-constexpr double eta = 0.9; //!< Relative inhibitory weight
+constexpr double g = 5; //!< Vthr/Vext
+constexpr double eta = 2; //!< Relative inhibitory weight
 constexpr double J = 0.1; //!< Weight of a neuron connexion in mV
 static double JE = J; //!< Weight of an excitatory connexion in mV
 static double JI = -g*J; //!< Weight of an inhibitory connexion in mV
